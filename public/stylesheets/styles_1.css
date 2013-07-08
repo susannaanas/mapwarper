@@ -363,7 +363,7 @@ p {
  width:20px;
  height:20px;
  float:left;
- margin-left:5px;
+ margin-left:3px;
 }
 /* icons from http://www.famfamfam.com/lab/icons/silk
 */
@@ -740,6 +740,7 @@ font-weight: bold;
 #map_table, #layer_table { /*s */
 /*	border-bottom: 1px solid #ccc; */
         clear: right;
+		border-spacing: 0px;
 }
 
 #map_table td, #map_table th, #layer_table td, #layer_table th {
@@ -837,7 +838,7 @@ font-style:italic;
         position: relative;
         z-index: 22;
 	height:500px;
-	border:1px solid #999999;
+/*	border:1px solid #999999; */
 }
 
 #to_map_block
@@ -846,7 +847,7 @@ font-style:italic;
   z-index: 20;
 	float:right;
       /* border:1px solid gray; */
-	width:48.5%;
+	width:49%;
 }
 
 #from_map_block
@@ -855,7 +856,7 @@ font-style:italic;
   z-index: 20;
 	float:left;
 	/* border:1px solid gray; */
-	width:48.5%;
+	width:49%;
 }
 
 #gcp
@@ -999,7 +1000,7 @@ color: #00aeff;
 
 }
 .map-off {
-	border:2px solid #999999;
+/*	border:2px solid #999999; */
 }
 .map-on {
 	border:2px solid #00f2ab;
@@ -1037,8 +1038,8 @@ div.olControlMousePosition
     right: 0px;
     height: 32px;
     width: 110px !important;
-    background: #FFFFFF;
-    border:1px solid gray;
+/*    background: #FFFFFF; 
+    border:1px solid gray; */
 }
 
 .olControlEditingToolbar div { 

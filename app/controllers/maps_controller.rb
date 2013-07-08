@@ -429,7 +429,7 @@ class MapsController < ApplicationController
 
     @current_tab = "show"
     @selected_tab = 0
-    @disabled_tabs =[]
+    @disabled_tabs =["show", "edit", "clip", "align", "activity", "warped", "metadata", "comments"]
     @map = Map.find(params[:id])
     @html_title = "Viewing Map "+@map.id.to_s
 
@@ -569,7 +569,7 @@ class MapsController < ApplicationController
   def warped
     @current_tab = "warped"
     @selected_tab = 5
-    @html_title = "Viewing Rectfied Map "+ @map.id.to_s
+    @html_title = "Viewing Rectified Map "+ @map.id.to_s
     if @map.warped_or_published? && @map.gcps.hard.size > 2
       @title = "Viewing warped map"
       @other_layers = Array.new
