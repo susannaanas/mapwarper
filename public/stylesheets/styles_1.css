@@ -272,7 +272,8 @@ ul.list {
 }
 body
 {
-  	background: #fff;
+/*  background: #fff; */
+	background-color: rgb(223, 223, 223);
 /*	font-family: Verdana, Helvetica, Arial, sans-serif; */
 	font-family: Helvetica, Arial, sans-serif;
 /*	font-size:95%;*/
@@ -601,7 +602,8 @@ padding: 1em 1em 1em 0;
 
 .map_links
 {
-	font-size:60%;
+	visibility:hidden;
+	/*font-size:60%;*/
 }
 
 .hidden {
@@ -798,11 +800,13 @@ font-style:italic;
 .map_description span, layer_description span {
 	font-style: italic;
 }
+
 .maplist_title, .layer_title
-{
+{ /*
 	font-size:larger;
 	font-weight:700;
         color: #010;
+		*/
 }
 .maplist_title a, .layer_title a {
   text-decoration: none;
