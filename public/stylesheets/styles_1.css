@@ -273,8 +273,9 @@ ul.list {
 body
 {
   	background: #fff;
-	font-family: Verdana, Helvetica, Arial, sans-serif;
-	font-size:95%;
+/*	font-family: Verdana, Helvetica, Arial, sans-serif; */
+	font-family: Helvetica, Arial, sans-serif;
+/*	font-size:95%;*/
 	color: #5e564b;
 	margin: 0 0 0 0;
 }
@@ -380,6 +381,7 @@ font-weight: strong;
 }
 
 .headerDiv {
+	visibility:hidden; /*s remove entirely, not just hide */
 	position: relative;
 	margin: 0 !important;
 	background: #e2dedb url(/images/header_bg.jpg) 0 -30px scroll;
@@ -733,17 +735,19 @@ font-weight: bold;
 	vertical-align:top;
 }
 
-#map_table, #layer_table {
-	border-bottom: 1px solid #ccc;
+#map_table, #layer_table { /*s */
+/*	border-bottom: 1px solid #ccc; */
         clear: right;
 }
 
 #map_table td, #map_table th, #layer_table td, #layer_table th {
+	/*
 	border-top: 1px solid #ccc;
 	padding: 5px 15px;
 	vertical-align: top;
 	text-align: left;
 	margin: 0;
+	*/
 }
  #layer_table_detail td, #layer_table_detail th {
 	border-top: 1px solid #ccc;
