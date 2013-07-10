@@ -149,7 +149,7 @@
       <div id ="clipping_mask_buttons">
 
         <% if @map.mask_status.nil? || @map.mask_status == :unmasked -%>
-          This map either is not currently masked. Do you want to <%= link_to "add or edit a mask now", map_path(:id =>@map, :anchor=>"Crop_tab") %>? <br />
+          This map is not currently masked. Do you want to <%= link_to "add or edit a mask now", map_path(:id =>@map, :anchor=>"Crop_tab") %>? <br />
         <% end %>
         Apply <%= link_to "clipping mask", map_path(:id =>@map, :anchor=>"Crop_tab") %> when rectifying?
         <label for="use_mask1">

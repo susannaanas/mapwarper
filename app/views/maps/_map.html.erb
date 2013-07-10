@@ -53,11 +53,13 @@
         <%= link_to("Download KML", map_url(:id => map, :format=>:kml)) -%>
       <% end -%>
     </div>
+    <%=begin%>
     <div class="map_links">
       <% if map.source_uri %>
       Links: <%= link_to 'Source / Biblio Ref', map.source_uri  %>
        <% end %>
     </div>
+    <%=end%>
 
   </td>
   <td>

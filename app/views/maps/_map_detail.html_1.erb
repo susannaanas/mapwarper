@@ -33,7 +33,7 @@
       <% end %>
 </span> <br />
     <% end -%>
-    
+    <%=begin%>
     <span class="map_links">
       <%- if logged_in? -%>
         <%- if current_user.maps.include?(map) -%>
@@ -58,5 +58,6 @@
     <%- end -%>
     <%= render :partial => 'shared/addthis', :locals => {:title => map.title, :description =>map.description} %>
 </span>
+<%=end%>
   </td>
 </tr>
